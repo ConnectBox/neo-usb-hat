@@ -1,0 +1,378 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TPS63020
+LIBS:NanoPi_Neo_Daughterboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "NEO USB HAT"
+Date "2017-06-14"
+Rev "0"
+Comp "ConnectBox"
+Comment1 "DAK"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS63020 U1
+U 1 1 5940868F
+P 6000 3750
+F 0 "U1" H 5814 3912 50  0000 L BNN
+F 1 "TPS63020" H 5780 3709 50  0000 L BNN
+F 2 "TPS63020:QFN14-3X4MM" H 6000 3750 50  0001 L BNN
+F 3 "None" H 6000 3750 50  0001 L BNN
+F 4 "None" H 6000 3750 50  0001 L BNN "Price"
+F 5 "Unavailable" H 6000 3750 50  0001 L BNN "Availability"
+F 6 "High Efficiency Single Inductor Buck-Boost Converter with 4A Switch" H 6000 3750 50  0001 L BNN "Description"
+F 7 "TPS63020" H 6000 3750 50  0001 L BNN "MP"
+F 8 "Texas Instruments" H 6000 3750 50  0001 L BNN "MF"
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P4
+U 1 1 594147D3
+P 1950 3600
+F 0 "P4" V 2275 3475 50  0000 C CNN
+F 1 "MICROUSB" H 1950 3800 50  0000 C CNN
+F 2 "Connectors:USB_Micro-B" V 1900 3500 50  0001 C CNN
+F 3 "" V 1900 3500 50  0000 C CNN
+	1    1950 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB_A P3
+U 1 1 5941485E
+P 3050 950
+F 0 "P3" H 3250 750 50  0000 C CNN
+F 1 "USB_A" H 3000 1150 50  0000 C CNN
+F 2 "Connectors:USB_A" V 3000 850 50  0001 C CNN
+F 3 "" V 3000 850 50  0000 C CNN
+	1    3050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X12 P2
+U 1 1 59414A14
+P 4250 1400
+F 0 "P2" H 4250 2050 50  0000 C CNN
+F 1 "NEO_GPIO_PINS2" V 4350 1400 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_12" H 4250 1400 50  0001 C CNN
+F 3 "" H 4250 1400 50  0000 C CNN
+	1    4250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59414C15
+P 7150 3500
+F 0 "R1" H 7250 3550 50  0000 C CNN
+F 1 "270K" H 7300 3450 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7080 3500 50  0001 C CNN
+F 3 "" H 7150 3500 50  0000 C CNN
+	1    7150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 59414D5D
+P 5950 2550
+F 0 "L1" V 5900 2550 50  0000 C CNN
+F 1 "INDUCTOR  1uH" V 6050 2550 50  0000 C CNN
+F 2 "BOURNS-SDR0403:BOURNS-SDR0403" H 5950 2550 50  0001 C CNN
+F 3 "" H 5950 2550 50  0000 C CNN
+	1    5950 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 1250 2850 1550
+Wire Wire Line
+	2850 1550 3800 1550
+Wire Wire Line
+	3800 1550 3800 850 
+Wire Wire Line
+	3800 850  4050 850 
+Wire Wire Line
+	3150 1250 3150 1950
+Wire Wire Line
+	3150 1950 4050 1950
+$Comp
+L C C3
+U 1 1 5941521F
+P 6100 5250
+F 0 "C3" V 6050 5100 50  0000 L CNN
+F 1 "100nF" V 6250 5150 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 6138 5100 50  0001 C CNN
+F 3 "" H 6100 5250 50  0000 C CNN
+	1    6100 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5941538A
+P 7650 3500
+F 0 "C4" H 7675 3600 50  0000 L CNN
+F 1 "22uF" H 7675 3400 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 7688 3350 50  0001 C CNN
+F 3 "" H 7650 3500 50  0000 C CNN
+	1    7650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 594153D7
+P 8050 3500
+F 0 "C5" H 8075 3600 50  0000 L CNN
+F 1 "22uF" H 8075 3400 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 8088 3350 50  0001 C CNN
+F 3 "" H 8050 3500 50  0000 C CNN
+	1    8050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5941540E
+P 7150 4100
+F 0 "R2" H 7250 4150 50  0000 C CNN
+F 1 "30K" H 7300 4050 50  0000 C CNN
+F 2 "w_smd_resistors:r_0805" V 7080 4100 50  0001 C CNN
+F 3 "" H 7150 4100 50  0000 C CNN
+	1    7150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3400 3100 3400
+Wire Wire Line
+	2700 2600 2700 3450
+Wire Wire Line
+	3100 3400 3100 3450
+Connection ~ 2700 3400
+Wire Wire Line
+	4900 3800 2250 3800
+Wire Wire Line
+	2700 3800 2700 3750
+Wire Wire Line
+	3100 3800 3100 3750
+Connection ~ 2700 3800
+Connection ~ 3100 3800
+Wire Wire Line
+	5300 3650 5050 3650
+Wire Wire Line
+	5050 3650 5050 5250
+Wire Wire Line
+	5050 5250 5950 5250
+Wire Wire Line
+	5200 2550 5650 2550
+Wire Wire Line
+	6250 2550 6850 2550
+Wire Wire Line
+	6850 2550 6850 3150
+Wire Wire Line
+	6850 3050 6700 3050
+Wire Wire Line
+	5300 3050 5200 3050
+Wire Wire Line
+	5200 2550 5200 3150
+Wire Wire Line
+	5300 3750 5050 3750
+Connection ~ 5050 3750
+$Comp
+L C C1
+U 1 1 594173FF
+P 2700 3600
+F 0 "C1" H 2725 3700 50  0000 L CNN
+F 1 "10uF" H 2725 3500 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 2738 3450 50  0001 C CNN
+F 3 "" H 2700 3600 50  0000 C CNN
+	1    2700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 594174C7
+P 3100 3600
+F 0 "C2" H 3125 3700 50  0000 L CNN
+F 1 "10uF" H 3125 3500 50  0000 L CNN
+F 2 "w_smd_cap:c_0805" H 3138 3450 50  0001 C CNN
+F 3 "" H 3100 3600 50  0000 C CNN
+	1    3100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X07 P1
+U 1 1 59417F32
+P 8900 3650
+F 0 "P1" H 8900 4050 50  0000 C CNN
+F 1 "NEO_GPIO_PINS" V 9000 3650 50  0000 C CNN
+F 2 "w_pin_strip:pin_strip_7" H 8900 3650 50  0001 C CNN
+F 3 "" H 8900 3650 50  0000 C CNN
+	1    8900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3350 8700 3350
+Connection ~ 8050 3350
+Wire Wire Line
+	2700 2600 1400 2600
+Wire Wire Line
+	1400 2600 1400 5950
+Wire Wire Line
+	1400 5950 8450 5950
+Wire Wire Line
+	8450 5950 8450 3950
+Wire Wire Line
+	8450 3950 8700 3950
+Wire Wire Line
+	6250 5250 7150 5250
+Wire Wire Line
+	6600 4950 6600 5950
+Connection ~ 6600 5950
+Connection ~ 7650 3350
+Connection ~ 7150 3350
+Wire Wire Line
+	6700 3650 6950 3650
+Wire Wire Line
+	6950 3650 6950 3850
+Wire Wire Line
+	6950 3850 7150 3850
+Wire Wire Line
+	7150 3650 7150 3950
+Connection ~ 7150 3850
+Wire Wire Line
+	7150 5250 7150 4250
+Connection ~ 6600 5250
+Wire Wire Line
+	5600 4650 5600 4950
+Wire Wire Line
+	5200 4950 6900 4950
+Wire Wire Line
+	6400 4650 6400 4950
+Connection ~ 6400 4950
+Wire Wire Line
+	6300 4650 6300 4950
+Connection ~ 6300 4950
+Wire Wire Line
+	6200 4650 6200 4950
+Connection ~ 6200 4950
+Wire Wire Line
+	6100 4650 6100 4950
+Connection ~ 6100 4950
+Wire Wire Line
+	6000 4650 6000 4950
+Connection ~ 6000 4950
+Wire Wire Line
+	5900 4650 5900 4950
+Connection ~ 5900 4950
+Wire Wire Line
+	5800 4650 5800 4950
+Connection ~ 5800 4950
+Wire Wire Line
+	5700 4650 5700 4950
+Connection ~ 5700 4950
+Wire Wire Line
+	5300 4050 5200 4050
+Wire Wire Line
+	5200 4050 5200 4950
+Connection ~ 5600 4950
+Wire Wire Line
+	6700 3850 6900 3850
+Wire Wire Line
+	6900 3850 6900 4950
+Connection ~ 6600 4950
+Wire Wire Line
+	6700 4050 6700 4950
+Connection ~ 6700 4950
+Wire Wire Line
+	7650 3650 7650 5950
+Connection ~ 7650 5950
+Wire Wire Line
+	8050 3650 8050 5950
+Connection ~ 8050 5950
+Wire Wire Line
+	5200 3150 5300 3150
+Connection ~ 5200 3050
+Wire Wire Line
+	6850 3150 6700 3150
+Connection ~ 6850 3050
+Wire Wire Line
+	5300 3450 4900 3450
+Wire Wire Line
+	6700 3450 7000 3450
+Wire Wire Line
+	7000 3450 7000 3350
+Connection ~ 7000 3350
+Text Notes 3200 650  0    60   ~ 0
+USB-A FEMALE PORT
+Wire Notes Line
+	2650 550  4550 550 
+Wire Notes Line
+	4550 550  4550 2100
+Wire Notes Line
+	4550 2100 2650 2100
+Wire Notes Line
+	2650 2100 2650 550 
+Text Notes 6800 5900 0    60   ~ 0
+GND
+Text Notes 8600 3250 0    60   ~ 0
++5V
+Text Notes 8700 4100 0    60   ~ 0
+GND\n
+Text Notes 1950 2700 0    60   ~ 0
+GND
+Text Notes 7950 1250 0    79   ~ 0
+Based upon schematic by David Burkitt
+Text Notes 7950 1050 0    118  ~ 0
+NanoPi NEO USB HAT\nRevision 0
+Wire Wire Line
+	4900 3350 4900 3800
+Connection ~ 4900 3450
+Wire Wire Line
+	4900 3350 5300 3350
+Wire Wire Line
+	2950 1250 2950 1450
+Wire Wire Line
+	2950 1450 3750 1450
+Wire Wire Line
+	3750 1450 3750 1050
+Wire Wire Line
+	3750 1050 4050 1050
+Wire Wire Line
+	3050 1250 3050 1350
+Wire Wire Line
+	3050 1350 3650 1350
+Wire Wire Line
+	3650 1350 3650 950 
+Wire Wire Line
+	3650 950  4050 950 
+$EndSCHEMATC

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:/Projects_Hardware/NanoPi_Neo_Daughterboard/NanoPi_Neo_Daughterboard.sch</source>
+    <date>6/15/2017 9:11:11 AM</date>
+    <tool>Eeschema 4.0.2-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NEO USB HAT</title>
+        <company>ConnectBox</company>
+        <rev>0</rev>
+        <date>2017-06-14</date>
+        <source>NanoPi_Neo_Daughterboard.sch</source>
+        <comment number="1" value="DAK"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>TPS63020</value>
+      <footprint>QFN14-3X4MM</footprint>
+      <datasheet>None</datasheet>
+      <fields>
+        <field name="Price">None</field>
+        <field name="Availability">Unavailable</field>
+        <field name="Description">High Efficiency Single Inductor Buck-Boost Converter with 4A Switch</field>
+        <field name="MP">TPS63020</field>
+        <field name="MF">Texas Instruments</field>
+      </fields>
+      <libsource lib="TPS63020" part="TPS63020"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5940868F</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>MICROUSB</value>
+      <libsource lib="conn" part="USB_OTG"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594147D3</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>USB_A</value>
+      <libsource lib="conn" part="USB_A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5941485E</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>NEO_GPIO_PINS2</value>
+      <libsource lib="conn" part="CONN_01X12"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59414A14</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>270K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59414C15</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>INDUCTOR  1uH</value>
+      <libsource lib="device" part="INDUCTOR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59414D5D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5941521F</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5941538A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>22uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594153D7</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>30K</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5941540E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594173FF</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>594174C7</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>NEO_GPIO_PINS</value>
+      <libsource lib="conn" part="CONN_01X07"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59417F32</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X07">
+      <description>Connector 01x07</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X07</fp>
+        <fp>Pin_Header_Angled_1X07</fp>
+        <fp>Socket_Strip_Straight_1X07</fp>
+        <fp>Socket_Strip_Angled_1X07</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X07</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X12">
+      <description>Connector 01x12</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X12</fp>
+        <fp>Pin_Header_Angled_1X12</fp>
+        <fp>Socket_Strip_Straight_1X12</fp>
+        <fp>Socket_Strip_Angled_1X12</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="INDUCTOR">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TPS63020" part="TPS63020">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS63020</field>
+        <field name="Footprint">QFN14-3X4MM</field>
+        <field name="Datasheet">None</field>
+        <field name="Price">None</field>
+        <field name="Availability">Unavailable</field>
+        <field name="Description">High Efficiency Single Inductor Buck-Boost Converter with 4A Switch</field>
+        <field name="MP">TPS63020</field>
+        <field name="MF">Texas Instruments</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VINA" type="BiDi"/>
+        <pin num="2" name="GND" type="BiDi"/>
+        <pin num="3" name="FB" type="BiDi"/>
+        <pin num="4" name="VOUT" type="BiDi"/>
+        <pin num="5" name="VOUT_2" type="BiDi"/>
+        <pin num="6" name="L2" type="BiDi"/>
+        <pin num="7" name="L2_2" type="BiDi"/>
+        <pin num="8" name="L1" type="BiDi"/>
+        <pin num="9" name="L1_2" type="BiDi"/>
+        <pin num="10" name="VIN" type="BiDi"/>
+        <pin num="11" name="VIN_2" type="BiDi"/>
+        <pin num="12" name="EN" type="BiDi"/>
+        <pin num="13" name="PS/SYNC" type="BiDi"/>
+        <pin num="14" name="PG" type="BiDi"/>
+        <pin num="15" name="PGND" type="BiDi"/>
+        <pin num="16" name="PGND1" type="BiDi"/>
+        <pin num="17" name="PGND2" type="BiDi"/>
+        <pin num="18" name="PGND3" type="BiDi"/>
+        <pin num="19" name="PGND4" type="BiDi"/>
+        <pin num="20" name="PGND5" type="BiDi"/>
+        <pin num="21" name="PGND6" type="BiDi"/>
+        <pin num="22" name="PGND7" type="BiDi"/>
+        <pin num="23" name="PGND8" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_A">
+      <description>A connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_OTG">
+      <description>micro/mini connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>D:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>D:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="TPS63020">
+      <uri>D:\Projects_Hardware\NanoPi_Neo_Daughterboard\TPS63020.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(R1-Pad2)">
+      <node ref="U1" pin="3"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="P4" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="3" name="Net-(L1-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="U1" pin="6"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(L1-Pad1)">
+      <node ref="L1" pin="1"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="5" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(P1-Pad4)">
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(P1-Pad5)">
+      <node ref="P1" pin="5"/>
+    </net>
+    <net code="9" name="Net-(P1-Pad6)">
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="10" name="Net-(P2-Pad1)">
+      <node ref="P2" pin="1"/>
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="11" name="Net-(P4-Pad2)">
+      <node ref="P4" pin="2"/>
+    </net>
+    <net code="12" name="Net-(P4-Pad3)">
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="13" name="Net-(P4-Pad4)">
+      <node ref="P4" pin="4"/>
+    </net>
+    <net code="14" name="Net-(P4-Pad6)">
+      <node ref="P4" pin="6"/>
+    </net>
+    <net code="15" name="Net-(P3-Pad2)">
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="16" name="Net-(P3-Pad3)">
+      <node ref="P3" pin="3"/>
+    </net>
+    <net code="17" name="Net-(P2-Pad12)">
+      <node ref="P2" pin="12"/>
+      <node ref="P3" pin="4"/>
+    </net>
+    <net code="18" name="Net-(P3-Pad5)">
+      <node ref="P3" pin="5"/>
+    </net>
+    <net code="19" name="Net-(P2-Pad2)">
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="20" name="Net-(P2-Pad3)">
+      <node ref="P2" pin="3"/>
+    </net>
+    <net code="21" name="Net-(P2-Pad4)">
+      <node ref="P2" pin="4"/>
+    </net>
+    <net code="22" name="Net-(P2-Pad5)">
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="23" name="Net-(P2-Pad6)">
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="24" name="Net-(C1-Pad1)">
+      <node ref="U1" pin="16"/>
+      <node ref="P4" pin="5"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="21"/>
+      <node ref="U1" pin="20"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="23"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="22"/>
+      <node ref="U1" pin="18"/>
+      <node ref="P1" pin="7"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="25" name="Net-(C3-Pad2)">
+      <node ref="U1" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="26" name="Net-(P2-Pad7)">
+      <node ref="P2" pin="7"/>
+    </net>
+    <net code="27" name="Net-(P2-Pad8)">
+      <node ref="P2" pin="8"/>
+    </net>
+    <net code="28" name="Net-(P2-Pad9)">
+      <node ref="P2" pin="9"/>
+    </net>
+    <net code="29" name="Net-(P2-Pad10)">
+      <node ref="P2" pin="10"/>
+    </net>
+    <net code="30" name="Net-(P2-Pad11)">
+      <node ref="P2" pin="11"/>
+    </net>
+    <net code="31" name="Net-(C4-Pad1)">
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="5"/>
+      <node ref="C5" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C4" pin="1"/>
+    </net>
+  </nets>
+</export>
