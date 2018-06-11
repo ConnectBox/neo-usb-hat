@@ -6,7 +6,7 @@ This version contains the KiCAD design for the NEO-USB-HAT that includes: 1 addi
 
 ####Version 1: Schematic
 
-[Schematic Link](https://github.com/ConnectBox/neo-usb-hat/Revision0/NEO_USB_HAT_14.06.2017.pdf  "Schematic")
+[Schematic Link](https://github.com/ConnectBox/neo-usb-hat/blob/master/Revision0/NEO_USB_HAT_14.06.2017.pdf  "Schematic")
 
 ####Version 1: PCB Design
 ![Design File](https://github.com/ConnectBox/neo-usb-hat/blob/master/Revision0/NEO_USB_HAT_pcblayout_15.06.2016.jpg?raw=true  "Design Files")
