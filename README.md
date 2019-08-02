@@ -1,3 +1,8 @@
+This branch is Depricated
+
+Please use branch https://github.com/ConnectBox/Circuit-Design/tree/Version5.0
+
+
 # neo-usb-hat
 This repo contains the schematic and KiCAD design files for the NEO-USB-HAT.  This is a daugherboard to add an extra USB port and power input to a NanoPi NEO.
 
